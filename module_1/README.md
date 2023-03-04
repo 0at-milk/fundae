@@ -11,3 +11,4 @@ Library. The main functions used were drawString(), delay(), fillScreen()
 Largely in that same order, as seen in the code. The main purpose of these functions is to create a string that is displayed onto the LCD display, followed by a pause between that line and the subsequent line, then clearing the screen using a fill color to display the following line. 
 
 Specific fonts, font-sizing, color choices, etc, can be seen in the code.
+

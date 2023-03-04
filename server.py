@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template
 from flask import Response, request, jsonify
-app = Flask(__name__)
+app = Flask(__name__, template_folder)
 
 
 @app.route('/')
@@ -10,7 +10,7 @@ def home():
 
 @app.route('/module')
 def module():
-    return render_template('module_1/documentation.html')
+    return render_template('documentation.html')
 
 
 if __name__ == '__main__':

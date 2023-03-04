@@ -10,7 +10,7 @@ def home():
 
 @app.route('/module')
 def module():
-    return render_template('/module_1/documentation.html')
+    return render_template('module_1/documentation.html')
 
 
 if __name__ == '__main__':

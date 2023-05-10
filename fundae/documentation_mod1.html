@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <!-- <script type="text/javascript" src="{{ url_for('static', filename = 'scoreboard.js') }}"></script> -->
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+   <style>
+     body{
+       background-color: ;
+     }
+     #title{
+       font-size: 30px;
+       font-weight: bold;
+       color: rgb(209, 114, 209);
+       padding-top: 50px;
+       margin-bottom: 30px;
+     }
+     #reams-input{
+       vertical-align: middle;
+     }
+     #submit-button{
+       vertical-align: middle;
+     }
+     #error-field{
+       color: red;
+     }
+     @font-face {
+        font-family: VCR OSD Mono;
+        src: url('VCR_OSD_MONO_1.001 copy.ttf');
+    }
+     .contents, .container{
+        font-family: VCR OSD Mono;
+
+     }
+     #figure_1 img{
+        max-height: 300px;
+        width: auto;
+     }
+   </style>
+  </head>
+  <body>
+    <title>Module 1</title>
+    <div class="container">
+        <div class="contents">
+            <!-- <div class="row"> -->
+              <div class="row" id="title">
+                <p> 
+                    A short reading display of a poem by Tenchi Tennō, from the series One Hundred Poems Explained by the Nurse (Hyakunin isshu uba ga etoki) 百人一首　うはかゑとき　天智天皇. 
+                </p>
+              </div>
+              
+              <div class="row" id="selected_works">DESCRIPTION</div>
+              
+              <div class="row" id="selected_works">Project README and code available on&nbsp <a href="https://github.com/0at-milk/fundae/tree/main/module_1">GitHub</a></div>
+                <ul class="list-group list-group-flush">
+                    
+                    <li class="list-group-item">
+                        <span style="white-space: pre-line">
+                            Aki no ta no
+                            Kario no io no
+                            Toma wo arami
+                            Waga koromode wa
+                            Tsuyu ni nure-tsutsu
+                            
+                            Coarse the rush-mat roof
+                            Sheltering the harvest-hut
+                            Of the autumn rice-field
+                            And my sleeves are growing wet
+                            With the moisture dripping through
+
+                        </span>
+                        <a>
+                            This ESP32 display spells out a haiku (俳句)--a type of Japanese poem that follows an unrhymed  three-line, 
+                            seventeen-syllable format. It was written sometime in the Edo period (1615–1868) in Japan.
+                            The display of the lines within the haiku follows an unusual rhythm to complement the nature of the unrhymed format of haikus. 
+                            Additionally, the font of each line, as well as the placement in some instances don’t match the previous thereby creating a unique legibility to the poem. 
+                            <br><br>
+                        </a>
+                        <figure id="figure_1">
+                            <img src="module_1/media/mod1_1.png" alt="esp32 display setup">
+                            <img src="module_1/media/mod1_2.png" alt="esp32 display setup">
+                            <figcaption>view of ESP32 display in classroom</figcaption>
+                        </figure>
+                        
+                    </li>
+                    <li class="list-group-item">
+                        <a>
+                            The classroom setting of our showcase made me choose a haiku since it’s short and each line can stand on its own for any viewer looking at it for a short period of time. 
+                            The vision was to create a flashing, short, and pleasant visual reading experience that matches the format of a haiku on paper.
+                            
+                            <br><br>
+                            For future references, I would make sure that the orientation of the display follows the orientation of the actual showcase so that the viewer may read the text easier. 
+                            I had some technical difficulties with the size and color of the font, and in the future I would take into account the setting of the showcase a lot more (such as the lighting, the distance between the ESP32 and the viewer, etc) so ensure that the display is legible.
+                            To this note, I would add that changes in font would also require changes in space lining between each poem line.
+                            Should the font get bigger and the space lining not change, the poem lines will stack on top of each other and make it difficult to read the previous line.
+                            <br><br>
+                        </a>
+                        <figure>
+                            <IMG width="372" height="661" src="https://www.youtube.com/embed/BXKZNLAXzOs" title="Arduino ESP32 Installation - Barnard College" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                
+                            <figcaption>Poem in motion</figcaption>
+                        </figure>
+                        
+                        
+                        </li>
+                        
+                    <!-- <li class="list-group-item"><a>2. Dapibus ac facilisis in</a></li>
+                    <li class="list-group-item"><a>3. Morbi leo risus</a></li>
+                    <li class="list-group-item"><a>4. Porta ac consectetur ac</a></li>
+                    <li class="list-group-item"><a>5. Vestibulum at eros</a></li> -->
+                </ul>
+              <div class="row" id="external_links">
+                  <div class="col"><a href="https://www.scholten-japanese-art.com/hokusai-16.php">READ MORE ON THE POEM<a></div>
+                    <div class="col"><a href="https://github.com/0at-milk/fundae/tree/main/module_1">RETURN TO HOMEPAGE<a></div>
+                  
+              </div>
+            <!-- </div> -->
+          </div>    
+    </div>
+  </body>
+</html>
